@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "104DD6F31840247B00ECD20B"
-               BuildableName = "YouTube Direct Lite for iOSTests.xctest"
+               BuildableName = "autocultureTests.xctest"
                BlueprintName = "autocultureTests"
                ReferencedContainer = "container:autoculture.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "104DD6D81840247B00ECD20B"
-            BuildableName = "YouTube Direct Lite for iOS.app"
+            BuildableName = "autoculture.app"
             BlueprintName = "autoculture"
             ReferencedContainer = "container:autoculture.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "104DD6D81840247B00ECD20B"
-            BuildableName = "YouTube Direct Lite for iOS.app"
+            BuildableName = "autoculture.app"
             BlueprintName = "autoculture"
             ReferencedContainer = "container:autoculture.xcodeproj">
          </BuildableReference>

@@ -38,6 +38,16 @@
 		108CBEA8184025EF00AE232C /* GTLYouTube_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = 108CBEA7184025EF00AE232C /* GTLYouTube_Sources.m */; };
 		108CBEAA1840261A00AE232C /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 108CBEA91840261A00AE232C /* GTMOAuth2ViewTouch.xib */; };
 		108CBEAF1840276900AE232C /* iframe-player.html in Resources */ = {isa = PBXBuildFile; fileRef = 108CBEAE1840276900AE232C /* iframe-player.html */; };
+		912F95581928C470006ADB34 /* ACDetailsForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 912F954F1928C470006ADB34 /* ACDetailsForm.m */; };
+		912F95591928C470006ADB34 /* ACDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912F95511928C470006ADB34 /* ACDetailsViewController.m */; };
+		912F955A1928C470006ADB34 /* ACMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912F95531928C470006ADB34 /* ACMapViewController.m */; };
+		912F955B1928C470006ADB34 /* ACTermsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 912F95551928C470006ADB34 /* ACTermsViewController.m */; };
+		912F955C1928C470006ADB34 /* ACTermsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 912F95561928C470006ADB34 /* ACTermsViewController.xib */; };
+		912F95661928C4B2006ADB34 /* FXForms.m in Sources */ = {isa = PBXBuildFile; fileRef = 912F955F1928C4B2006ADB34 /* FXForms.m */; };
+		912F95671928C4B2006ADB34 /* INTULocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 912F95621928C4B2006ADB34 /* INTULocationManager.m */; };
+		912F95681928C4B2006ADB34 /* INTULocationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 912F95641928C4B2006ADB34 /* INTULocationRequest.m */; };
+		912F956A1928C4C1006ADB34 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 912F95691928C4C1006ADB34 /* MapKit.framework */; };
+		912F956C1928CE46006ADB34 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 912F956B1928CE46006ADB34 /* menu.png */; };
 		9136F9591928982600B1689C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9136F9581928982600B1689C /* Main.storyboard */; };
 		9136F9651928984C00B1689C /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9136F95C1928984C00B1689C /* bg.png */; };
 		9136F9661928984C00B1689C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 9136F95D1928984C00B1689C /* icon.png */; };
@@ -113,6 +123,24 @@
 		108CBEA7184025EF00AE232C /* GTLYouTube_Sources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GTLYouTube_Sources.m; path = "../../google-api-objectivec-client-read-only/Source/Services/YouTube/Generated/GTLYouTube_Sources.m"; sourceTree = "<group>"; };
 		108CBEA91840261A00AE232C /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = "../../google-api-objectivec-client-read-only/Source/OAuth2/Touch/GTMOAuth2ViewTouch.xib"; sourceTree = "<group>"; };
 		108CBEAE1840276900AE232C /* iframe-player.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "iframe-player.html"; sourceTree = "<group>"; };
+		912F954E1928C470006ADB34 /* ACDetailsForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDetailsForm.h; sourceTree = "<group>"; };
+		912F954F1928C470006ADB34 /* ACDetailsForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACDetailsForm.m; sourceTree = "<group>"; };
+		912F95501928C470006ADB34 /* ACDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACDetailsViewController.h; sourceTree = "<group>"; };
+		912F95511928C470006ADB34 /* ACDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACDetailsViewController.m; sourceTree = "<group>"; };
+		912F95521928C470006ADB34 /* ACMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACMapViewController.h; sourceTree = "<group>"; };
+		912F95531928C470006ADB34 /* ACMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACMapViewController.m; sourceTree = "<group>"; };
+		912F95541928C470006ADB34 /* ACTermsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACTermsViewController.h; sourceTree = "<group>"; };
+		912F95551928C470006ADB34 /* ACTermsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACTermsViewController.m; sourceTree = "<group>"; };
+		912F95561928C470006ADB34 /* ACTermsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ACTermsViewController.xib; sourceTree = "<group>"; };
+		912F955E1928C4B2006ADB34 /* FXForms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXForms.h; sourceTree = "<group>"; };
+		912F955F1928C4B2006ADB34 /* FXForms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXForms.m; sourceTree = "<group>"; };
+		912F95611928C4B2006ADB34 /* INTULocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTULocationManager.h; sourceTree = "<group>"; };
+		912F95621928C4B2006ADB34 /* INTULocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTULocationManager.m; sourceTree = "<group>"; };
+		912F95631928C4B2006ADB34 /* INTULocationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTULocationRequest.h; sourceTree = "<group>"; };
+		912F95641928C4B2006ADB34 /* INTULocationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTULocationRequest.m; sourceTree = "<group>"; };
+		912F95651928C4B2006ADB34 /* INTULocationRequestDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTULocationRequestDefines.h; sourceTree = "<group>"; };
+		912F95691928C4C1006ADB34 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		912F956B1928CE46006ADB34 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		9136F9581928982600B1689C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9136F95C1928984C00B1689C /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		9136F95D1928984C00B1689C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
@@ -140,6 +168,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				912F956A1928C4C1006ADB34 /* MapKit.framework in Frameworks */,
 				104DD733184024C800ECD20B /* SystemConfiguration.framework in Frameworks */,
 				104DD731184024C300ECD20B /* Security.framework in Frameworks */,
 				104DD72F184024BE00ECD20B /* MobileCoreServices.framework in Frameworks */,
@@ -185,6 +214,7 @@
 		104DD6DB1840247B00ECD20B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				912F95691928C4C1006ADB34 /* MapKit.framework */,
 				104DD732184024C800ECD20B /* SystemConfiguration.framework */,
 				104DD730184024C300ECD20B /* Security.framework */,
 				104DD72E184024BE00ECD20B /* MobileCoreServices.framework */,
@@ -256,6 +286,27 @@
 			name = "YouTube API Protocols";
 			sourceTree = "<group>";
 		};
+		912F955D1928C4B2006ADB34 /* FXForms */ = {
+			isa = PBXGroup;
+			children = (
+				912F955E1928C4B2006ADB34 /* FXForms.h */,
+				912F955F1928C4B2006ADB34 /* FXForms.m */,
+			);
+			path = FXForms;
+			sourceTree = "<group>";
+		};
+		912F95601928C4B2006ADB34 /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				912F95611928C4B2006ADB34 /* INTULocationManager.h */,
+				912F95621928C4B2006ADB34 /* INTULocationManager.m */,
+				912F95631928C4B2006ADB34 /* INTULocationRequest.h */,
+				912F95641928C4B2006ADB34 /* INTULocationRequest.m */,
+				912F95651928C4B2006ADB34 /* INTULocationRequestDefines.h */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
 		9136F95A1928984C00B1689C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +319,7 @@
 		9136F95B1928984C00B1689C /* images */ = {
 			isa = PBXGroup;
 			children = (
+				912F956B1928CE46006ADB34 /* menu.png */,
 				9136F9801928B53400B1689C /* play_video.png */,
 				9136F97E1928B22500B1689C /* play.png */,
 				9136F9751928A11B00B1689C /* capture_video.png */,
@@ -294,6 +346,8 @@
 		9136F96D192898EF00B1689C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				912F955D1928C4B2006ADB34 /* FXForms */,
+				912F95601928C4B2006ADB34 /* LocationManager */,
 				1059C9D9184E953A00D49E24 /* YouTube API Protocols */,
 				108CBEA7184025EF00AE232C /* GTLYouTube_Sources.m */,
 				104DD734184024FD00ECD20B /* GTLCommon_Sources.m */,
@@ -311,6 +365,15 @@
 		9136F96E1928991500B1689C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				912F954E1928C470006ADB34 /* ACDetailsForm.h */,
+				912F954F1928C470006ADB34 /* ACDetailsForm.m */,
+				912F95501928C470006ADB34 /* ACDetailsViewController.h */,
+				912F95511928C470006ADB34 /* ACDetailsViewController.m */,
+				912F95521928C470006ADB34 /* ACMapViewController.h */,
+				912F95531928C470006ADB34 /* ACMapViewController.m */,
+				912F95541928C470006ADB34 /* ACTermsViewController.h */,
+				912F95551928C470006ADB34 /* ACTermsViewController.m */,
+				912F95561928C470006ADB34 /* ACTermsViewController.xib */,
 				108CBEA91840261A00AE232C /* GTMOAuth2ViewTouch.xib */,
 				9136F9721928998000B1689C /* MainViewController2.h */,
 				9136F9731928998000B1689C /* MainViewController2.m */,
@@ -417,11 +480,13 @@
 				9136F96A1928984C00B1689C /* Icon-60@2x.png in Resources */,
 				9136F96C1928984C00B1689C /* Icon-Small@2x.png in Resources */,
 				9136F9651928984C00B1689C /* bg.png in Resources */,
+				912F955C1928C470006ADB34 /* ACTermsViewController.xib in Resources */,
 				104DD6E71840247B00ECD20B /* InfoPlist.strings in Resources */,
 				9136F9771928A11B00B1689C /* capture_video.png in Resources */,
 				104DD6EF1840247B00ECD20B /* Images.xcassets in Resources */,
 				108CBEAF1840276900AE232C /* iframe-player.html in Resources */,
 				9136F9671928984C00B1689C /* plus.png in Resources */,
+				912F956C1928CE46006ADB34 /* menu.png in Resources */,
 				9136F96B1928984C00B1689C /* Icon-76@2x.png in Resources */,
 				9136F9781928A11B00B1689C /* select_video.png in Resources */,
 				9136F9691928984C00B1689C /* Icon-40@2x.png in Resources */,
@@ -444,18 +509,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				104DD72B1840249200ECD20B /* YouTubeUploadVideo.m in Sources */,
+				912F95661928C4B2006ADB34 /* FXForms.m in Sources */,
 				104DD72A1840249200ECD20B /* YouTubeGetUploads.m in Sources */,
+				912F955B1928C470006ADB34 /* ACTermsViewController.m in Sources */,
 				104DD6E91840247B00ECD20B /* main.m in Sources */,
 				104DD7261840249200ECD20B /* VideoPlayerViewController.m in Sources */,
 				104DD737184024FD00ECD20B /* GTLNetworking_Sources.m in Sources */,
 				104DD7241840249200ECD20B /* VideoData.m in Sources */,
 				104DD7211840249200ECD20B /* MainViewController.m in Sources */,
 				104DD7271840249200ECD20B /* VideoUploadViewController.m in Sources */,
+				912F95671928C4B2006ADB34 /* INTULocationManager.m in Sources */,
+				912F95581928C470006ADB34 /* ACDetailsForm.m in Sources */,
 				104DD7251840249200ECD20B /* VideoListViewController.m in Sources */,
 				104DD7221840249200ECD20B /* UploadController.m in Sources */,
+				912F955A1928C470006ADB34 /* ACMapViewController.m in Sources */,
 				104DD7291840249200ECD20B /* YouTubeDirectTag.m in Sources */,
 				9136F9711928997800B1689C /* SplashViewController.m in Sources */,
 				108CBEA8184025EF00AE232C /* GTLYouTube_Sources.m in Sources */,
+				912F95591928C470006ADB34 /* ACDetailsViewController.m in Sources */,
+				912F95681928C4B2006ADB34 /* INTULocationRequest.m in Sources */,
 				104DD736184024FD00ECD20B /* GTLCommon_Sources.m in Sources */,
 				104DD7231840249200ECD20B /* Utils.m in Sources */,
 				104DD6ED1840247B00ECD20B /* GCLAppDelegate.m in Sources */,

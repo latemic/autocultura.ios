@@ -12,6 +12,7 @@
 #import "Utils.h"
 #import "YouTubeGetUploads.h"
 #import "VideoListTableViewCell.h"
+#import "ACMapViewController.h"
 
 @implementation MainViewController2
 
@@ -47,6 +48,7 @@
     [super viewWillAppear:animated];
 
     [self hideVideoButtons];
+    [self updateVideosList];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -75,12 +77,14 @@
 - (void)iniUI {
 
     UIButton *menuButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
-    [menuButton setImage:[UIImage imageNamed:@"plus.png"] forState:UIControlStateNormal];
+    [menuButton setImage:[UIImage imageNamed:@"menu.png"] forState:UIControlStateNormal];
     [menuButton addTarget:self action:nil forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:menuButton];
 
     [self.tableView registerNib:[UINib nibWithNibName:@"VideoListTableViewCell" bundle:nil]
                 forCellReuseIdentifier:@"videoCell"];
+
+    self.tableView.contentInset = UIEdgeInsetsMake(8, 0, 0, 0);
 }
 
 - (void)showVideoButtons {
@@ -119,7 +123,9 @@
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     }
 
-    [self.getUploads getYouTubeUploadsWithService:self.youtubeService];
+    if (self.isAuthorized) {
+        [self.getUploads getYouTubeUploadsWithService:self.youtubeService];
+    }
 }
 
 - (IBAction)addVideoButtonClick:(id)sender {
@@ -179,7 +185,7 @@
 #pragma mark - YouTubeGetUploadsDelegate methods
 
 - (void)getYouTubeUploads:(YouTubeGetUploads *)getUploads didFinishWithResults:(NSArray *)results {
-    NSLog(@"answer");
+
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     self.videosArray = results;
 
@@ -242,22 +248,24 @@
 didFinishPickingMediaWithInfo:(NSDictionary *)info {
     NSString *mediaType = [info objectForKey:UIImagePickerControllerMediaType];
 
-    NSLog(@"back");
     if (CFStringCompare((__bridge CFStringRef) mediaType, kUTTypeMovie, 0) == kCFCompareEqualTo) {
 
-        NSURL *videoUrl = [info objectForKey:UIImagePickerControllerMediaURL];
+        self.videoURL = [info objectForKey:UIImagePickerControllerMediaURL];
 
-/*        VideoUploadViewController *uploadController = [[VideoUploadViewController alloc] init];
-        uploadController.videoUrl = videoUrl;
-        uploadController.youtubeService = self.youtubeService;
-
-        [[self navigationController] pushViewController:uploadController animated:YES];*/
+        [self performSegueWithIdentifier:@"pushMapViewControllerSegue" sender:nil];
     }
 
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    [super prepareForSegue:segue sender:sender];
 
+    if([segue.identifier isEqualToString:@"pushMapViewControllerSegue"]){
+        ((ACMapViewController *)segue.destinationViewController).videoURL = self.videoURL;
+        ((ACMapViewController *)segue.destinationViewController).youtubeService = self.youtubeService;
+    }
+}
 
 
 @end

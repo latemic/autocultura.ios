@@ -22,6 +22,7 @@
 
 
 
+@property NSURL *videoURL;
 @property (nonatomic) NSArray *videosArray;
 @property (nonatomic) GTLServiceYouTube *youtubeService;
 @property(nonatomic, strong) YouTubeGetUploads *getUploads;

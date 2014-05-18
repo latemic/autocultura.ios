@@ -131,6 +131,7 @@
                         <outlet property="selectVideoButton" destination="YZA-wj-5Iw" id="IGA-WF-cxb"/>
                         <outlet property="selectVideoButtonHorizontalSpaceConstraint" destination="xZK-cv-nBo" id="aMd-aL-m7M"/>
                         <outlet property="tableView" destination="WGY-dY-4XH" id="jmw-hO-ZbN"/>
+                        <segue destination="bes-Bl-qO8" kind="push" identifier="pushMapViewControllerSegue" id="kLN-9c-dXU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yz9-M2-xHN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -174,44 +175,73 @@
             </objects>
             <point key="canvasLocation" x="-557" y="570"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="jDr-cG-eFA">
+        <!--Map View Controller - Карта-->
+        <scene sceneID="TQH-KJ-K6O">
             <objects>
-                <viewController id="hb2-Fs-tqC" sceneMemberID="viewController">
+                <viewController id="bes-Bl-qO8" customClass="ACMapViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="xrZ-gZ-zFp"/>
-                        <viewControllerLayoutGuide type="bottom" id="wcc-Sc-KOM"/>
+                        <viewControllerLayoutGuide type="top" id="mZt-YT-4Re"/>
+                        <viewControllerLayoutGuide type="bottom" id="KvA-OP-P4J"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="zE7-Go-pjM">
+                    <view key="view" contentMode="scaleToFill" id="3sN-Gn-ydk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="jnS-d0-MoQ">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Vx9-ng-i3d">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1B4-vf-xib">
-                                <rect key="frame" x="-3" y="57" width="325" height="394"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="record.png" translatesAutoresizingMaskIntoConstraints="NO" id="OLE-qt-le0">
-                                <rect key="frame" x="123" y="473" width="75" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KuY-6Y-Hbw">
-                                <rect key="frame" x="0.0" y="20" width="325" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                            </view>
+                                <connections>
+                                    <outlet property="delegate" destination="bes-Bl-qO8" id="5w5-T5-BTu"/>
+                                </connections>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xTe-Lh-Pxs"/>
+                    <navigationItem key="navigationItem" title="Карта" id="Lzb-5i-hz4">
+                        <barButtonItem key="rightBarButtonItem" title="Далее" id="hIn-9f-iGY">
+                            <connections>
+                                <segue destination="gDN-Jg-yKK" kind="push" identifier="pushDetailsViewControllerSegue" id="pzs-k6-g8A"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="Vx9-ng-i3d" id="Fpu-sz-x8Y"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="w8b-G5-89Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K13-S9-R8f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="471" y="570"/>
+            <point key="canvasLocation" x="601" y="570"/>
+        </scene>
+        <!--Details View Controller - Detail-->
+        <scene sceneID="jH7-Mr-oLT">
+            <objects>
+                <viewController title="Detail" id="gDN-Jg-yKK" customClass="ACDetailsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j3M-QH-Hcn"/>
+                        <viewControllerLayoutGuide type="bottom" id="TCg-Vp-czb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qwc-ET-2qu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="9xP-Tf-vdT">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9xP-Tf-vdT" firstAttribute="leading" secondItem="qwc-ET-2qu" secondAttribute="leading" id="3Mh-DK-IoP"/>
+                            <constraint firstAttribute="trailing" secondItem="9xP-Tf-vdT" secondAttribute="trailing" id="Mcd-A2-BrZ"/>
+                            <constraint firstItem="TCg-Vp-czb" firstAttribute="top" secondItem="9xP-Tf-vdT" secondAttribute="bottom" id="a81-qc-mI7"/>
+                            <constraint firstItem="9xP-Tf-vdT" firstAttribute="top" secondItem="qwc-ET-2qu" secondAttribute="top" id="c29-Th-wei"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Описание" id="TQ9-1s-GJl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yMC-rz-F2a" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="570"/>
         </scene>
     </scenes>
     <resources>
@@ -219,7 +249,6 @@
         <image name="capture_video.png" width="200" height="200"/>
         <image name="icon.png" width="250" height="250"/>
         <image name="plus.png" width="200" height="200"/>
-        <image name="record.png" width="200" height="200"/>
         <image name="select_video.png" width="200" height="200"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

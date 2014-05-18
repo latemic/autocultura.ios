@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B99305DA-83D6-44DC-BCB6-17D0B421ED37</string>
+	<key>IDESourceControlProjectName</key>
+	<string>autoculture</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>48048E30-AF8D-410A-9B6E-405550870633</key>
+		<string>http://gtm-oauth2.googlecode.com/svn/trunk/Source</string>
+		<key>98A49229-7717-4EF2-B4EE-43DED49D8661</key>
+		<string>https://github.com/latemic/autocultura.ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>autoculture.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>48048E30-AF8D-410A-9B6E-405550870633</key>
+		<string>../../../google-api-objectivec-client-read-only/Source/OAuth2</string>
+		<key>98A49229-7717-4EF2-B4EE-43DED49D8661</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>48048E30-AF8D-410A-9B6E-405550870633</key>
+		<string>http://gtm-oauth2.googlecode.com/svn</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/latemic/autocultura.ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>98A49229-7717-4EF2-B4EE-43DED49D8661</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryBranchesRelativeLocationKey</key>
+			<string>branches</string>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlRepositoryTagsRelativeLocationKey</key>
+			<string>tags</string>
+			<key>IDESourceControlRepositoryTrunkRelativeLocationKey</key>
+			<string>trunk</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>48048E30-AF8D-410A-9B6E-405550870633</string>
+			<key>IDESourceControlWCCName</key>
+			<string>OAuth2</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>98A49229-7717-4EF2-B4EE-43DED49D8661</string>
+			<key>IDESourceControlWCCName</key>
+			<string>yt-direct-lite-iOS-master</string>
+		</dict>
+	</array>
+</dict>
+</plist>
