@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CIDR_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../google-api-objectivec-client-read-only/Source/GTLCommon_Sources.m">
+      <sourceFolder url="file://$MODULE_DIR$/../google-api-objectivec-client-read-only/Source/GTLCommon_Sources.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../google-api-objectivec-client-read-only/Source/GTLNetworking_Sources.m">
+      <sourceFolder url="file://$MODULE_DIR$/../google-api-objectivec-client-read-only/Source/GTLNetworking_Sources.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../google-api-objectivec-client-read-only/Source/Services/YouTube/Generated/GTLYouTube_Sources.m">
+      <sourceFolder url="file://$MODULE_DIR$/../google-api-objectivec-client-read-only/Source/Services/YouTube/Generated/GTLYouTube_Sources.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
+
