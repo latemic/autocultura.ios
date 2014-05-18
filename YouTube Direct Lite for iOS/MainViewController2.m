@@ -15,17 +15,6 @@
 
 @implementation MainViewController2
 
-- (id)init {
-    self = [super init];
-    if (self) {
-//        _getUploads = [[YouTubeGetUploads alloc] init];
-//        _getUploads.delegate = self;
-//
-//        _videosArray = [[NSArray alloc] init];
-    }
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -33,6 +22,8 @@
     _getUploads.delegate = self;
 
     _videosArray = [[NSArray alloc] init];
+
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 
     // Initialize the youtube service & load existing credentials from the keychain if available
     self.youtubeService = [[GTLServiceYouTube alloc] init];
@@ -123,7 +114,11 @@
 }
 
 - (void)updateVideosList {
-    NSLog(@"update");
+
+    if (!self.videosArray.count) {
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    }
+
     [self.getUploads getYouTubeUploadsWithService:self.youtubeService];
 }
 
@@ -187,6 +182,11 @@
     NSLog(@"answer");
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
     self.videosArray = results;
+
+    if (self.videosArray.count) {
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+    }
+
     [self.tableView reloadData];
 }
 
@@ -242,6 +242,7 @@
 didFinishPickingMediaWithInfo:(NSDictionary *)info {
     NSString *mediaType = [info objectForKey:UIImagePickerControllerMediaType];
 
+    NSLog(@"back");
     if (CFStringCompare((__bridge CFStringRef) mediaType, kUTTypeMovie, 0) == kCFCompareEqualTo) {
 
         NSURL *videoUrl = [info objectForKey:UIImagePickerControllerMediaURL];

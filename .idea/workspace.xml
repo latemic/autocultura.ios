@@ -41,7 +41,7 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_iPhone_Retina__4_inch_64_bit__7.1" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos" />
   <component name="FavoritesManager">
     <favorites_list name="autoculture" />
   </component>
@@ -103,7 +103,7 @@
       <file leaf-file-name="MainViewController2.m" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/YouTube Direct Lite for iOS/MainViewController2.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="194" column="45" selection-start="7164" selection-end="7164" vertical-scroll-proportion="0.32107022" vertical-offset="2524" max-vertical-offset="3752">
+            <state line="225" column="140" selection-start="8365" selection-end="8365" vertical-scroll-proportion="0.50167227" vertical-offset="2850" max-vertical-offset="3766">
               <folding>
                 <element signature="e#157#188#0" expanded="true" />
               </folding>
@@ -411,7 +411,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/YouTube Direct Lite for iOS/MainViewController2.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="194" column="45" selection-start="7164" selection-end="7164" vertical-scroll-proportion="0.32107022" vertical-offset="2524" max-vertical-offset="3752">
+        <state line="225" column="140" selection-start="8365" selection-end="8365" vertical-scroll-proportion="0.50167227" vertical-offset="2850" max-vertical-offset="3766">
           <folding>
             <element signature="e#157#188#0" expanded="true" />
           </folding>
